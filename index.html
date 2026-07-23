@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GTAG Fan Game</title>
+
+  <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+</head>
+
+<body>
+
+<a-scene>
+
+  <!-- Sky -->
+  <a-sky color="#87CEEB"></a-sky>
+
+
+  <!-- Ground -->
+  <a-plane
+    position="0 0 0"
+    rotation="-90 0 0"
+    width="30"
+    height="30"
+    color="#228B22">
+  </a-plane>
+
+
+  <!-- Player body -->
+  <a-sphere
+    position="0 1.2 0"
+    radius="0.4"
+    color="brown">
+  </a-sphere>
+
+
+  <!-- Left hand -->
+  <a-sphere
+    id="leftHand"
+    radius="0.1"
+    color="red">
+  </a-sphere>
+
+
+  <!-- Right hand -->
+  <a-sphere
+    id="rightHand"
+    radius="0.1"
+    color="blue">
+  </a-sphere>
+
+
+  <!-- Camera -->
+  <a-entity position="0 1.6 0">
+    <a-camera></a-camera>
+  </a-entity>
+
+
+</a-scene>
+
+</body>
+</html>
